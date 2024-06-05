@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>@yield('title')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,33 +15,27 @@
         <script src="./js/scripts.js"></script>
     </head>
     <body>
-        <h1>Título</h1>
-        {{--Condicional--}}
-        @if(10>5)
-            <p>Condição verdadeira</p>
-        @endif
-        <p>Seu nome é {{$nome}} e sua idade é {{$idade}}.</p>
-        @if($nome=="Damien") 
-            <p>nome: Damien</p>
-        @elseif($nome=="Pedro")
-            <p>nome: Pedro</p>
-        @else
-            <p>Sem nome</p>
-        @endif
+        @yield('content')
+    <footer class="footer">
 
-        {{--Estrutura de repetição--}}
-        @for($i=0; $i < count($array); $i++)
-            <p>{{$array[$i]}} - {{$i}}</p>
-        @endfor 
-
-        @foreach($nomes as $nome)
-            <p>{{$nome}}</p>
-        @endforeach
-
-        {{--Como usar a tag php no blade--}}
-        @php
-            $nome = "jojo";
-            echo "O nome é $nome.";
-        @endphp
+<ul class="socialList">
+    <li>
+        <a href="https://www.linkedin.com/in/damien-costa/" target="_blank">
+            (linkedin)
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/mienblack" target="_blank">
+            (github)
+        </a>
+    </li>
+</ul>
+<div class="ref">
+    <p>Made with 💟 by Damien Costa ✌🏿</p>
+    <p>
+        <span class="refSpan">HDCEvent</span> &copy; 2024
+    </p>
+</div>
+</footer>
     </body>
 </html>

@@ -1,10 +1,10 @@
 @extends('layouts.main')
 
-@section('title', 'Contatos')
+@section('title', 'Produtos')
 
 @section('content')
 
-<h1>Contatos</h1>
+<h1>Produtos</h1>
 <a href="/">Home</a>
 
 @endsection
