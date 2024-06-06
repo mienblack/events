@@ -4,8 +4,10 @@
 
 @section('content')
 
-<h1>Produto {{$id}}</h1>
+<h1>Produtos</h1>
+@if($busca != '')
+<p>O usuário está buscando por: {{$busca}}</p>
+@endif
 <a href="/">Home</a>
-<a href="/produtos">Produtos</a>
 
 @endsection
