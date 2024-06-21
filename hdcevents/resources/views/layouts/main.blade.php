@@ -21,7 +21,7 @@
             <nav class="nav navbar navbar-expand-lg navabr-light">
                 <div class="collapse navbar-collapse">
                     <a href="/" class="navar-brand">
-                        (logo)
+                        <img src="/img/event_logo.png" alt="Logo">
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
