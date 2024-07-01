@@ -19,7 +19,7 @@
     <body>
         <header>
             <nav class="nav navbar navbar-expand-lg navabr-light">
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse d-flex justify-content-between">
                     <a href="/" class="navar-brand">
                         <img src="/img/event_logo.png" alt="Logo">
                     </a>
@@ -46,12 +46,12 @@
 <ul class="socialList">
     <li>
         <a href="https://www.linkedin.com/in/damien-costa/" target="_blank">
-            (linkedin)
+            <img src="/img/linkedin-icon.png" alt="Linkedin" class="social-icon">
         </a>
     </li>
     <li>
         <a href="https://github.com/mienblack" target="_blank">
-            (github)
+            <img src="/img/github-icon.png" alt="Github" class="social-icon">
         </a>
     </li>
 </ul>

@@ -12,7 +12,7 @@
     </div>
     <div id="events-container" class="col-md-12">
         <h2>Veja os próximos eventos</h2>
-        <p>Veja os eventos dos próximos dias</p>
+        <p class="subtitle">Veja os eventos dos próximos dias</p>
         <div id="card-container" class="row">
         @foreach($events as $event)
             <div class="card col-md-3">

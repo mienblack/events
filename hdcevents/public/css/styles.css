@@ -8,10 +8,11 @@
     font-family: 'Roboto';
 }
 
+html,
 body {
     min-height: 100vh;
+    min-width: 100vw;
     position: relative;
-    padding-bottom: 100px;
 }
 
 header {
@@ -33,9 +34,9 @@ p {
     border-color: #c28008;
 }
 
-/*navbar*/
+/*Navbar*/
 .navbar img {
-    width: 40px;
+    width: 50px;
 }
 
 .navbar {
@@ -53,14 +54,88 @@ p {
     color: #f2a340;
 }
 
+.row {
+    margin: 0;
+}
 
+/*Search Container*/
+#search-container {
+    background-image: url('../img/event_search-container_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    margin: auto;
+    width: 50%;
+}
+
+/*Events List*/
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#events-container .card {
+    flex: 1 1 0;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+#events-container img {
+    max-height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-date {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-participants {
+    font-size: 14px;
+}
+
+
+/*Footer*/
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100vw;
-    background-color: rgb(73, 9, 44);
-    color: #ffe0ef;
+    background-color: #353e48;
+    color: #ccc;
     font-size: 1em;
     text-transform: capitalize;
     font-weight: bold;
@@ -71,10 +146,16 @@ p {
     align-items: center;
 }
 
+.social-icon {
+    width: 30px;
+}
+
 .socialList {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .socialList li {
@@ -99,13 +180,13 @@ p {
 }
 
 .refSpan {
-    color: #ffbb33;
+    color: #f2a340;
     font-weight: bold;
 }
 
 .footer a {
     padding: 2px;
     text-decoration: none;
-    color: #ffe0ef;
+    color: #ccc;
     cursor: pointer;
 }
